@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        android:background="@drawable/two_color"
+        android:layout_margin="5dp"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/sideVerticalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="চোখের-বালি"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#363636"
+                />
+
+
+            <TextView
+                android:id="@+id/bookDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="চোখের বালি বিশ্বকবি রবীন্দ্রনাথ ঠাকুরের লেখা একটি সামাজিক উপন্যাস। ১৯০১-০২ সালে নবপর্যায় বঙ্গদর্শন পত্রিকায় ধারাবাহিকভাবে প্রকাশিত হয়। ১৯০৩ সালে বই আকারে প্রকাশিত হয়। উপন্যাসের বিষয় সমাজ ও যুগযুগান্তরাগত সংস্কারের সঙ্গে ব্যক্তিজীবনের বিরোধ। আখ্যানভাগ সংসারের সর্বময় কর্ত্রী মা, এক অনভিজ্ঞা বালিকাবধূ, এক বাল্যবিধবা ও তার প্রতি আকৃষ্ট দুই পুরুষকে কেন্দ্র করে আবর্তিত হয়েছে।"
+                android:textColor="#5A5858"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="5dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/staricon"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+                <TextView
+                    android:id="@+id/bookRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.88"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#363636"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
